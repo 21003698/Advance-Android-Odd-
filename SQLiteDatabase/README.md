@@ -302,8 +302,11 @@ public class DatabaseManager {
 
 ![Screenshot (2)](https://user-images.githubusercontent.com/93427522/236729040-32453072-2227-42a0-8d9b-9c571fbf4bba.png)
 
-<img width="960" alt="sand1" src="https://user-images.githubusercontent.com/93427522/236730041-1e2aa06d-dc82-4902-8af1-dd3ead20cd83.png">
+![Screenshot (1)](https://user-images.githubusercontent.com/93427522/236730130-d61a08f6-d71c-4973-86c1-4d5d3b98074b.png)
 
+![Screenshot (3)](https://user-images.githubusercontent.com/93427522/236730142-067b7895-7bef-42fc-b80a-15c3b01c5492.png)
+
+![Screenshot (5)](https://user-images.githubusercontent.com/93427522/236730175-640f5d65-75d5-4695-9fc2-319b27e814b8.png)
 
 
 ## RESULT
