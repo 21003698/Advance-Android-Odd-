@@ -29,8 +29,8 @@ Step 7: Save and run the application.
 ## PROGRAM:
 /*
 Program to print the DatabaseTable using the SQLite”.
-Developed by:Challa Sandeep
-Registeration Number :212221240011
+## Developed by:Challa Sandeep
+## Registeration Number :212221240011
 */
 
 ## MainActivity.java
