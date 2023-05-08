@@ -27,15 +27,14 @@ Step 6: Display message give in MainActivity file.
 Step 7: Save and run the application.
 
 ## PROGRAM:
-```
 /*
 Program to print the DatabaseTable using the SQLite”.
 Developed by:Challa Sandeep
 Registeration Number :212221240011
 */
-```
-##MainActivity.java
 
+## MainActivity.java
+```
 package com.example.sandeep;
 
 import androidx.appcompat.app.AppCompatActivity;
