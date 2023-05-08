@@ -302,6 +302,7 @@ public class DatabaseManager {
 
 ![Screenshot (2)](https://user-images.githubusercontent.com/93427522/236729040-32453072-2227-42a0-8d9b-9c571fbf4bba.png)
 
+<img width="960" alt="sand1" src="https://user-images.githubusercontent.com/93427522/236730041-1e2aa06d-dc82-4902-8af1-dd3ead20cd83.png">
 
 
 
