@@ -300,6 +300,8 @@ public class DatabaseManager {
 
 ## OUTPUT
 
+![Screenshot (2)](https://user-images.githubusercontent.com/93427522/236729040-32453072-2227-42a0-8d9b-9c571fbf4bba.png)
+
 
 
 
