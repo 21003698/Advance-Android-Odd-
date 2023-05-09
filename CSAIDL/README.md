@@ -181,11 +181,14 @@ interface MultiplyInterface {
 ```
 
 ## OUTPUT
-![](1.png)
-![](2.png)
-![](3.png)
-![](4.png)
+<img width="1440" alt="ex1" src="https://user-images.githubusercontent.com/93427522/237008660-9250c6a2-913e-4195-b6ee-49cd86943c74.png">
 
+
+<img width="1440" alt="ex2" src="https://user-images.githubusercontent.com/93427522/237008951-10820a76-6cc3-41d5-b61a-213d29e0716c.png">
+
+<img width="454" alt="ex3" src="https://user-images.githubusercontent.com/93427522/237008767-7fc40087-b532-4728-8feb-1cf25e497a95.png">
+
+<img width="454" alt="ex4" src="https://user-images.githubusercontent.com/93427522/237008793-b8a84faf-83ba-4120-aaa6-8ffa3e81aa4f.png">
 
 
 ## RESULT
