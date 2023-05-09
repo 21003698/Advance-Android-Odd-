@@ -123,9 +123,9 @@ public class MultiplicationService extends Service {
         }
     };
 }
-~
+```
 ## MultiplyInterface.aidl
-~
+```
 // MultiplyInterface.aidl
 package com.example.aidl;
 
