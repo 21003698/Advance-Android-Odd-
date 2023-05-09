@@ -26,15 +26,15 @@ Step 6: Display message give in MainActivity file(client/server).
 Step 7: Save and run the application.
 
 ## PROGRAM:
-
+```
 /*
 Program to print the client/server services using AIDL”.
 Developed by:challa sandeep.
 Registeration Number :212221240011.
 */
-
+```
 ## MainActivity.java
-~
+```
 package com.example.aidl;
 
 //import androidx.appcompat.app.AppCompatActivity; 
@@ -98,9 +98,9 @@ public class MainActivity extends AppComponentActivity implements View.OnClickLi
 //        int result = myInterface.multiplyTwoValuesTogether(firstNumber,secondNumber);
     }
 }
-~
+```
 ## MultiplicationService.java
-~
+```
 package com.example.aidl;
 
 import android.app.Service;
@@ -134,9 +134,9 @@ package com.example.aidl;
 interface MultiplyInterface {
   int multiplyTwoValuesTogether(int firstNumber, int secondNumber);
 }
-~
+```
 ## activity_main.xml
-~
+```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -178,7 +178,7 @@ interface MultiplyInterface {
 
 
 </RelativeLayout>
-~
+```
 
 ## OUTPUT
 ![](1.png)
