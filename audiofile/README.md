@@ -29,13 +29,104 @@ Step 7: Save and run the application.
 ```
 /*
 Program to play and control the audio file”.
-Developed by:
-Registeration Number :
+Developed by: Manoj Guna Sundar Tella.
+Registeration Number : 212221240026.
 */
 ```
+### MainActivity.java
+```
+package com.example.audiofile;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+    Button b1,b2,b3;
+    MediaPlayer mp;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        b1=findViewById(R.id.button);
+        b2=findViewById(R.id.button2);
+        b3=findViewById(R.id.button3);
+        mp=MediaPlayer.create(getApplicationContext(),R.raw.music);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mp.start();
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mp.pause();
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mp.stop();
+            }
+        });
+    }
+}
+```
+### activity_main.xml
+```
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY MUSIC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAUSE MUSIC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP MUSIC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
 ## OUTPUT
+![Screenshot 2023-05-10 192342](https://github.com/21003698/Advance-Android-Odd-/assets/93427522/070fae92-1838-4d2a-bd88-e6458504ca34)
 
+![Screenshot 2023-05-10 165425](https://github.com/21003698/Advance-Android-Odd-/assets/93427522/6f6026b3-4afb-4c2c-a6fd-c6c112822357)
 
 
 
