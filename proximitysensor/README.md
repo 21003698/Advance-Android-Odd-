@@ -27,17 +27,90 @@ Step 7: Save and run the application.
 
 ## PROGRAM:
 ```
-/*
 Program to print the process of proximitysensor in android mobile devices”.
-Developed by:
-Registeration Number :
-*/
+Developed by:Challa Sandeep
+Registeration Number:212221240011
 ```
+## MainActivity.java
+```
+package com.example.sandeep;
 
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
+public class MainActivity extends AppCompatActivity {
+    TextView sensorStatusTV;
+    SensorManager sensorManager;
+    Sensor proximitySensor;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        sensorStatusTV = findViewById(R.id.sensorStatusTV);
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        proximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        if (proximitySensor == null) {
+            Toast.makeText(this, "No proximity sensor found in device.", Toast.LENGTH_SHORT).show();
+            finish();
+        } else {
+            Toast.makeText(this,"Proximity sensor is found",Toast.LENGTH_LONG).show();
+            sensorManager.registerListener(proximitySensorEventListener,
+                    proximitySensor,
+                    SensorManager.SENSOR_DELAY_NORMAL);
+        }
+    }
+    SensorEventListener proximitySensorEventListener = new SensorEventListener() {
+        @Override
+        public void onAccuracyChanged(Sensor sensor, int accuracy) {
+        }
+        @Override
+        public void onSensorChanged(SensorEvent event) {
+            if (event.sensor.getType() == Sensor.TYPE_PROXIMITY) {
+                if (event.values[0] == 0) {
+                    sensorStatusTV.setText("Near");
+                } else {
+                    sensorStatusTV.setText("Away");
+                }
+            }
+        }
+    };
+}
+
+```
+## activity_main.xml
+```
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sensorStatusTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textSize="50dp" />
+
+</RelativeLayout>
+```
 ## OUTPUT
+<img width="943" alt="away 1" src="https://github.com/21003698/Advance-Android-Odd-/assets/93427522/3ed466f6-db8e-4d37-88ce-54fa313b2f79">
 
+<img width="945" alt="away 2" src="https://github.com/21003698/Advance-Android-Odd-/assets/93427522/02e067cf-9b06-4adc-bbc4-9b1108095b72">
 
+<img width="959" alt="away 3" src="https://github.com/21003698/Advance-Android-Odd-/assets/93427522/fd177676-d804-4e8d-8c14-4b9d943adf04">
 
+<img width="335" alt="away" src="https://github.com/21003698/Advance-Android-Odd-/assets/93427522/02ec5cdd-59ec-4e5c-9fb6-79007e290302">
 
 ## RESULT
 Thus a Simple Android Application to display the details of proximity sensor using sensor manager in Android Studio is developed and executed successfully.
